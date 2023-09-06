@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: beige;
+  min-height: 95vh;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container {
+  width: 25rem;
+  height: 30rem;
+  max-width: 500px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 5px;
+  padding: 2rem;
+  transform: perspective(55em) rotateX(58deg) rotateY(0deg) rotateZ(-40deg);
+  transform-style: preserve-3d;
+  border-radius: 33px;
+  box-shadow: -4px 4px 0 1px #f9f9fb, 1px 0 30px 0 rgba(34, 33, 81, 0.01),
+    -30px 28px 28px 0 rgba(34, 33, 81, 0.25);
+}
+.container:hover {
+  transform: perspective(75em) rotateX(0);
+  box-shadow: 0 0 0 0 #f9f9fb, 1px 0 30px 0 rgba(34, 33, 81, 0.01),
+    -1px 1px 12px 0 rgba(34, 33, 81, 0.25);
+}
+
+.displayArea {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  background-color: inherit;
+  /* border: 3px solid black; */
+  margin: 2px 0;
+  padding-right: 1rem;
+  font-size: 4rem;
+  text-align: right;
+  color: #fff;
+  max-width: 400px;
+  min-height: 3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.btn-double {
+  grid-column-end: 3;
+  grid-column-start: 1;
+}
+.btn {
+  margin: 1.5px;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+}
+.btn-orange {
+  color: #fff;
+  font-size: 3rem;
+  background: linear-gradient(to right, #ff9500, #fa960a);
+}
+.btn-orange:active {
+  background-color: #f0a132;
+}
+.btn-orange:hover {
+  background: linear-gradient(to right, #f9960c, #f6ae4a);
+}
+
+.btn-gray {
+  background: linear-gradient(to right, #c8c8c7, #999999);
+}
+.btn-gray:active {
+  background-color: #f0f0ee;
+}
+.btn-gray:hover {
+  background: linear-gradient(to right, #dadad9, #aeaeae);
+}
+
+.btn-dark {
+  background: linear-gradient(to right, #5d5d5d, #505050);
+  color: #fff;
+}
+.btn-dark:active {
+  background-color: #6c6c6c;
+}
+.btn-dark:hover {
+  background: linear-gradient(to right, #707070, #646464);
+}

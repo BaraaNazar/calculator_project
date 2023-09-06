@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <label class="displayArea">0</label>
+        <button class="btn btn-gray clearBtn keyboard" data-key="Escape">
+          AC
+        </button>
+        <button class="btn btn-gray minusPlusBtn keyboard" data-key="Backspace">
+          &leftarrow;
+        </button>
+        <button class="btn btn-gray remainderBtn keyboard" data-key="%">
+          %
+        </button>
+        <button class="btn btn-orange dividerBtn keyboard" data-key="/">
+          /
+        </button>
+        <button class="btn btn-dark keyboard" data-key="7">7</button>
+        <button class="btn btn-dark keyboard" data-key="8">8</button>
+        <button class="btn btn-dark keyboard" data-key="9">9</button>
+        <button class="btn btn-orange multiplyBtn keyboard" data-key="*">
+          *
+        </button>
+        <button class="btn btn-dark keyboard" data-key="4">4</button>
+        <button class="btn btn-dark keyboard" data-key="5">5</button>
+        <button class="btn btn-dark keyboard" data-key="6">6</button>
+        <button class="btn btn-orange minusBtn keyboard" data-key="-">-</button>
+        <button class="btn btn-dark keyboard" data-key="1">1</button>
+        <button class="btn btn-dark keyboard" data-key="2">2</button>
+        <button class="btn btn-dark keyboard" data-key="3">3</button>
+        <button class="btn btn-orange plusBtn keyboard" data-key="+">+</button>
+        <button class="btn btn-double btn-dark keyboard" data-key="0">0</button>
+        <button class="btn btn-dark keyboard" data-key=".">.</button>
+        <button
+          class="btn btn-orange plusBtn equalsBtn keyboard"
+          data-key="Enter"
+        >
+          =
+        </button>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
